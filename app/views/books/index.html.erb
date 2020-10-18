@@ -1,0 +1,9 @@
+<h1>List all Books stored in Database </h1>
+<% @books.each do |book| %>
+    <p><strong>Title:</strong> <%= book.title %></p>
+<p><strong>Description:</strong> <%= book.description %></p>
+<% end %>
+
+<%= link_to 'Create new books',new_book_path(@book) %>|
+<%= link_to 'home',root_path(@book) %>
+

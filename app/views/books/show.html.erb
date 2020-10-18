@@ -1,0 +1,6 @@
+<h1>Dislpay Book with Title and Description</h1>
+
+<p><strong>Title:</strong> <%= @book.title %></p>
+<p><strong>Description:</strong> <%= @book.description %></p>
+<%= link_to "Edit", edit_book_path(@book) %>
+<%= link_to "Delete", book_path(@book),  method: :delete, data: {confirm: "Are you sure?"} %>
